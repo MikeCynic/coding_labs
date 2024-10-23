@@ -1,5 +1,5 @@
 # TODO Найдите количество книг, которое можно разместить на дискете
-kb_size=1.44*1024**2
-book_size=100*50*25*4
-num=kb_size // book_size
+byte_size = 1.44 * 1024 ** 2
+book_size = 100 * 50 * 25 * 4
+num = byte_size // book_size
 print("Количество книг, помещающихся на дискету:", int(num))
