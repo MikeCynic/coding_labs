@@ -18,4 +18,3 @@ def find_common_participants(p1, p2, d=','):
     return p_list
 
 
-
