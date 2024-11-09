@@ -13,7 +13,7 @@ def countletters(text):
     return letter_count
 
 
-def calculatefrequency(num_of_letters):
+def calculate_frequency(num_of_letters):
     # Общая сумма букв
     total_letters = sum(num_of_letters.values())
 
@@ -63,6 +63,7 @@ main_str = """
 Под ним сидел, и кот учёный 
 Свои мне сказки говорил. 
 """
+
 # Подсчет количества букв
 letter_count = countletters(main_str)
 
