@@ -4,15 +4,15 @@
 items_list = ['яблоко', 'банан', 'апельсин', 'груша', 'киви', 'банан']
 
 
-def ind_finder(list_arg, item):
-    for i in range(len(list_arg)):
-        if list_arg[i] == item:
-            return i
+def index_finder(list_arg, item_to_search):
+    for index, item in enumerate(list_arg):
+        if item == item_to_search:
+            return index
     return None
 
 
 for find_item in ['банан', 'груша', 'персик']:
-    index_item = ind_finder(items_list, find_item)  # TODO Вызовите функцию, что получить индекс товара
+    index_item = index_finder(items_list, find_item)  # TODO Вызовите функцию, что получить индекс товара
     if index_item is not None:
         print(f"Первое вхождение товара '{find_item}' имеет индекс {index_item}.")
     else:
