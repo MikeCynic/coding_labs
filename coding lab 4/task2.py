@@ -7,7 +7,6 @@ OUTPUT_FILENAME = "output.json"
 
 
 def task() -> None:
-    ...  # TODO считать содержимое csv файла
     output_data = {}
     with open(INPUT_FILENAME, "r", encoding="utf-8") as input_file:
         reader = csv.DictReader(input_file)
@@ -18,7 +17,6 @@ def task() -> None:
         json.dump(data_to_transfer, output_file, indent=4)
 
 
-...  # TODO Сериализовать в файл с отступами равными 4
 
 if __name__ == '__main__':
     # Нужно для проверки
